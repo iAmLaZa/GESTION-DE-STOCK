@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="ISO-8859-1"?> -->
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="salim" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ba5ccdf9-ddf2-486a-8e47-250b78cd91d2">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#FBFDFF"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="salim" uuid="c594ff90-18d6-43a4-8bb7-0ad45401f4e5">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="SQL">
+			<![CDATA[select datevente,totale,benefice from vente]]>
+		</queryString>
+		<field name="datevente" class="java.sql.Date">
+			<property name="com.jaspersoft.studio.field.name" value="datevente"/>
+			<property name="com.jaspersoft.studio.field.label" value="datevente"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="totale" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="totale"/>
+			<property name="com.jaspersoft.studio.field.label" value="totale"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="benefice" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="benefice"/>
+			<property name="com.jaspersoft.studio.field.label" value="benefice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="s" uuid="78ab0f0d-5e94-4a6d-b4ba-97956a288258">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="SQL">
+			<![CDATA[SELECT datevente,totale,benefice FROM vente]]>
+		</queryString>
+		<field name="datevente" class="java.sql.Date">
+			<property name="com.jaspersoft.studio.field.name" value="datevente"/>
+			<property name="com.jaspersoft.studio.field.label" value="datevente"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="totale" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="totale"/>
+			<property name="com.jaspersoft.studio.field.label" value="totale"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="benefice" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="benefice"/>
+			<property name="com.jaspersoft.studio.field.label" value="benefice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select datevente,totale,benefice from vente]]>
+	</queryString>
+	<field name="datevente" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="datevente"/>
+		<property name="com.jaspersoft.studio.field.label" value="datevente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totale" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="totale"/>
+		<property name="com.jaspersoft.studio.field.label" value="totale"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="benefice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="benefice"/>
+		<property name="com.jaspersoft.studio.field.label" value="benefice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vente"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="totale1" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{totale}]]></variableExpression>
+	</variable>
+	<variable name="benefice1" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{benefice}]]></variableExpression>
+	</variable>
+	<variable name="benefice2" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{benefice}]]></variableExpression>
+	</variable>
+	<variable name="totale2" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[$F{totale}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-11" y="0" width="581" height="132" uuid="a60070d6-bc9c-4e4c-95a2-1f68727b69d5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="97" y="0" width="340" height="110" forecolor="#000000" uuid="e1fdcbc7-e23b-4e80-a841-caf9d3724195"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font size="22" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[الإحصائيات]]></text>
+			</staticText>
+			<image>
+				<reportElement x="440" y="0" width="130" height="110" uuid="f034a419-f541-48f8-8e29-5bc49fc5819b"/>
+				<imageExpression><![CDATA["C:/Users/User/IdeaProjects/salim/src/image/icons8_combo_chart_40px.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="-3" y="0" width="100" height="110" uuid="d52ca38d-7d2f-46c1-a8a4-a241ed6da313"/>
+				<imageExpression><![CDATA["C:/Users/User/IdeaProjects/salim/src/image/icons8_cash_register_100px.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="80" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="80" uuid="f3c5e74d-3f33-45f5-b196-4751d8863e11"/>
+			</rectangle>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="40" y="10" width="140" height="45" uuid="b312ac07-0002-4ab8-aac6-3cd1f129074d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="420" y="10" width="140" height="45" uuid="039f69bd-7ee7-4863-b82a-43dc73dbf2d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="66" uuid="b4668566-2c30-42bc-ab9c-a78437712452"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[التاريخ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="66" uuid="81ecbe14-2ce3-4327-9311-9df9f21289e0"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[المجموع]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="66" uuid="1d09d770-02a7-42fb-99b0-26b0c16f7d52"/>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الفائدة]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="32" uuid="39ef2894-1a39-4f77-a065-5c7838a717a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f27bf331-98d8-455f-a7a1-2205d5cadc36"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datevente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="185" height="32" uuid="a0d92b9f-a666-4430-a510-51a204ca6a49">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="183553c9-fbfe-49fb-9838-52d904013c6c"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totale}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="32" uuid="eb52ebca-e404-459e-9c6e-1fb812b7ec22">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="45cee88f-a37c-40f9-a7d0-3d4a61547b1f"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{benefice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="83" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="76" uuid="4d3a224b-ff24-4cc9-8824-9f1e863dd961"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="370" y="13" width="174" height="50" uuid="ac4133df-9663-409f-bed9-c1f1ec4b464a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="170" y="13" width="190" height="50" uuid="507f281f-52fd-4f6b-85b9-7d18217c7b80"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="490" y="26" width="50" height="30" uuid="43911b6d-72b2-4f42-9a8d-9d425a3fbb92"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الفائدة :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="26" width="80" height="30" uuid="0021ade2-343d-47d4-bbe4-9be5f948c2e6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  اجمالي الدخل :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="26" width="100" height="30" uuid="613c169a-f29d-4167-90b6-ccf52f796624"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{benefice2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="26" width="90" height="30" uuid="c9c14284-9c22-403e-8c52-df90a3766de6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totale2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="229" y="12" width="100" height="30" uuid="7f7fe046-f9e1-4cea-ac8b-73750e99f308"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
